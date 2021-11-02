@@ -11,5 +11,15 @@ public class HitelSzamla extends Szamla {
     public int getHitelKeret() {
         return hitelKeret;
     }
+    @Override
+    public boolean kivesz(double osszeg) {
+        boolean sikeres = true;
+        if (osszeg > getAktualisEgyenleg()+hitelKeret) {
+            sikeres = false;
+        } else {
+            setAktualisEgyenleg(getAktualisEgyenleg()-osszeg);
+        }
+        return sikeres;
+    }
 
 }
