@@ -27,4 +27,7 @@ public class MegtakaritasiSzamla extends Szamla {
         }
         return sikerultE;
     }
+    public void kamatJovaIras(){
+        setAktualisEgyenleg(getAktualisEgyenleg()*kamat);
+    }
 }
