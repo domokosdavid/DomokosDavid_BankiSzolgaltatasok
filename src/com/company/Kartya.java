@@ -30,5 +30,6 @@ public class Kartya extends BankiSzolgaltatas{
         return szamla.kivesz(osszeg);
 
     }
+    ezzel elbaszom a kodot
 
 }
